@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #d4af37;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0e68c;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23d4af37" opacity="0.1"/></svg>');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #d4af37;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #b8941f;
+}
+
+.features {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.game-info {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.numbers-grid {
+    margin-top: 2rem;
+}
+
+#numbers-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.number-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.number-btn:hover {
+    background-color: #eee;
+    border-color: #999;
+}
+
+.number-btn.selected {
+    background-color: #d4af37;
+    color: white;
+    border-color: #d4af37;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* Sezione Gioca */
+#play {
+    display: none;
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.play-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.selected-numbers {
+    margin: 2rem 0;
+}
+
+.selected-numbers .number-btn {
+    margin: 5px;
+}
+
+.ruote-selection {
+    margin: 2rem 0;
+}
+
+.ruota-option {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ruota-option:hover {
+    background-color: #eee;
+}
+
+.ruota-option.selected {
+    background-color: #d4af37;
+    color: white;
+}
+
+.bet-types {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.bet-type {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bet-type:hover {
+    background-color: #eee;
+}
+
+.bet-type.selected {
+    background-color: #d4af37;
+    color: white;
+}
+
+.bet-amount {
+    margin: 2rem 0;
+}
+
+.bet-amount input {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submit-bet {
+    margin-top: 2rem;
+}
+
+/* Risultati */
+#results {
+    display: none;
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.results-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.last-extraction {
+    margin: 2rem 0;
+}
+
+.extraction-numbers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.extraction-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4af37;
+    color: white;
+    border-radius: 50%;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* Storico */
+#history {
+    display: none;
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.history-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.history-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+    
+    #numbers-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .bet-types {
+        flex-direction: column;
+        align-items: center;
+    }
+}

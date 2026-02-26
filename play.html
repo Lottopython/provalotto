@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioca al Lotto - Il Sito del Lotto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Il Sito del Lotto</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="play.html">Gioca</a></li>
+                    <li><a href="results.html">Risultati</a></li>
+                    <li><a href="history.html">Storico</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="play">
+        <div class="container">
+            <div class="play-section">
+                <h2>Gioca al Lotto</h2>
+                <p>Seleziona i tuoi numeri fortunati, la ruota e il tipo di scommessa</p>
+                
+                <div class="numbers-grid">
+                    <h3>Scegli i Numeri (Massimo 10)</h3>
+                    <div id="numbers-container"></div>
+                    
+                    <div class="quick-pick">
+                        <button onclick="quickPick(5)" class="btn-primary">5 Numeri Casuali</button>
+                        <button onclick="quickPick(6)" class="btn-primary">6 Numeri Casuali</button>
+                        <button onclick="quickPick(7)" class="btn-primary">7 Numeri Casuali</button>
+                        <button onclick="quickPick(8)" class="btn-primary">8 Numeri Casuali</button>
+                        <button onclick="quickPick(9)" class="btn-primary">9 Numeri Casuali</button>
+                        <button onclick="quickPick(10)" class="btn-primary">10 Numeri Casuali</button>
+                    </div>
+                </div>
+                
+                <div class="selected-numbers">
+                    <h3>Numeri Selezionati:</h3>
+                    <!-- I numeri selezionati verranno mostrati qui -->
+                </div>
+                
+                <div class="ruote-selection">
+                    <h3>Seleziona la Ruota:</h3>
+                    <!-- Le ruote verranno popolate tramite JavaScript -->
+                </div>
+                
+                <div class="bet-types">
+                    <h3>Seleziona il Tipo di Scommessa:</h3>
+                    <!-- I tipi di scommessa verranno popolati tramite JavaScript -->
+                </div>
+                
+                <div class="bet-amount">
+                    <h3>Importo della Scommessa (€):</h3>
+                    <input type="number" min="0.50" step="0.50" placeholder="Es. 1.00">
+                </div>
+                
+                <div class="submit-bet">
+                    <button class="btn-primary">Conferma Scommessa</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Il Sito del Lotto - Tutti i diritti riservati | Gioca Responsabilmente</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>PREVISIONISTICA RAZIONALE - BA | INTERO ARCHIVIO</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+.container { max-width: 1400px; margin: 0 auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+h1 { color: #d32f2f; text-align: center; border-bottom: 3px solid #d32f2f; padding-bottom: 10px; margin-bottom: 30px; }
+h2 { color: #1976d2; border-left: 4px solid #1976d2; padding-left: 15px; margin-top: 40px; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background-color: #2c3e50; color: white; }
+.sottomedia { background-color: #fff3cd; }
+.media { background-color: #e3f2fd; }
+.sovrmedia { background-color: #ffebee; }
+.attiva { color: #2e7d32; font-weight: bold; }
+.passiva { color: #c62828; font-weight: bold; }
+.neutra { color: #546e7a; font-style: italic; }
+.scarico { background-color: #e8f5e8; border-left: 4px solid #4caf50; }
+.accumulo { background-color: #fff8e1; }
+.sfaldamento { background-color: #c8e6c9; border: 2px solid #4caf50; }
+.saturato { background-color: #ffcdd2; border: 2px solid #f44336; }
+.isotopo { background-color: #f3e5f5; border-left: 4px solid #9c27b0; }
+.accavallata { background-color: #fff3e0; border-left: 4px solid #fb8c00; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 2px dashed #ccc; font-size: 0.9em; color: #666; }
+.pr-ufficiale { background-color: #e8f5e8; border-left: 4px solid #4caf50; padding: 15px; margin: 20px 0; border-radius: 5px; }
+.nota { font-size: 0.85em; color: #777; margin-top: 5px; font-style: italic; }
+.disclaimer { background: #ffebee; border-left: 4px solid #c62828; padding: 15px; margin: 20px 0; border-radius: 5px; }
+.breve-periodo { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0; }
+.breve-periodo h3 { margin-top: 0; color: white; }
+.breve-periodo ul { margin-bottom: 0; }
+.breve-periodo li { margin: 8px 0; }
+.alert { background: #ffcccb; border-left: 4px solid #ff0000; padding: 10px; margin: 10px 0; border-radius: 3px; }
+.venus-avviso { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 20px; border-radius: 8px; margin: 25px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>PREVISIONISTICA RAZIONALE - ANALISI OPERATIVA COMPLETA</h1>
+<p style="text-align: center; font-size: 18px; font-weight: bold;">
+Ruota: <span style="color: #d32f2f;">BA</span> | Periodo: INTERO ARCHIVIO | Data riferimento: 2026/02/27 | Estrazioni analizzate: 10640
+</p>
+<div class="pr-ufficiale">
+<h3>📌 METODOLOGIA P.R. UFFICIALE (Documentazione Parti 1-8)</h3>
+<ul>
+<li><strong>Base analitica:</strong> Decine naturali (01-10, 11-20, ..., 81-90)</li>
+<li><strong>Ciclo teorico:</strong> 18 estrazioni → media 10 presenze/decina</li>
+<li><strong>Semicicli:</strong> Analisi tendenziale S1 (prime 9) vs S2 (ultime 9)</li>
+<li><strong>Classificazione:</strong> SOTTOMEDIA (&lt;10), MEDIA (=10), SOVRAMEDIA (&gt;10)</li>
+<li><strong>Fase decina:</strong> Accumulo vs Scarico imminente (Parti 5-6)</li>
+<li><strong>Saturazione:</strong> Numeri con ≥4 presenze (18 estr.) o decine con ≥16 presenze → DA EVITARE</li>
+<li><strong>Direttrici dominanti:</strong> 27 estrazioni con presenza in tutti e 3 i semicicli + assenza saturazione</li>
+<li><strong>Direttrici accavallate:</strong> Numero coinvolto in 2 direttrici adiacenti → +35% probabilità (Parti 4-5)</li>
+<li><strong>Gruppi isotopi avanzati:</strong> Stessa decina + stessa posizione estrazionale + analisi evoluzione (Parte 3)</li>
+<li><strong>C.A.F.:</strong> Segmento chiuso (consecutivo) + evolutivo (crescente) = massima priorità</li>
+<li><strong>Tabulati:</strong> Lettura ORIZZONTALE (pronostico) + VERTICALE (precursori)</li>
+<li><strong>Fase sfaldamento:</strong> ≥2 precursori massimi sortiti → esito atteso entro 6-7 COLPI EFFETTIVI (non calendariali)</li>
+<li><strong>Backtesting:</strong> Validazione storica con tasso successo misurato</li>
+</ul>
+</div>
+<div class="venus-avviso">
+<h3>⚠️ AVVISO METODOLOGICO IMPORTANTE - CONTESTO VENUS</h3>
+<p style="margin-bottom: 15px;">
+<strong>Le estrazioni meccanizzate (Venus, dal 2010) hanno modificato radicalmente il comportamento estrazionale.</strong><br>
+La definizione classica di "anomalie estrazionali" (Parte 4 P.R.) basata sulle "direttrici ±2" <strong>NON È PIÙ APPLICABILE</strong> 
+al contesto attuale nello stesso modo del periodo manuale, poiché le Venus non seguono più le "leggi evolutive" del periodo manuale.
+</p>
+<p style="margin-bottom: 15px;">
+<strong>Tuttavia, la Previsionistica Razionale è una metodologia STATISTICA che trascende i meccanismi fisici di estrazione.</strong><br>
+Il calcolo delle anomalie (Parte 4) rimane parte integrante della P.R. ufficiale perché analizza il <strong>quadro estrattivo generale osservato</strong>, 
+non le cause fisiche della sua generazione. La P.R. studia il comportamento numerico reale, indipendentemente dal meccanismo estrattivo (manuale/Venus).
+</p>
+<p style="font-style: italic; margin-bottom: 0;">
+ℹ️ Questo sistema implementa la P.R. ufficiale nella sua interezza (Parti 1-8), inclusa l'analisi delle anomalie estrazionali (Parte 4), 
+con onesta metodologica sulle peculiarità del contesto Venus.
+</p>
+</div>
+<div class="disclaimer">
+<strong>⚠️ DISCLAIMER METODOLOGICO</strong><br>
+• I tabulati reali di Tutor sono PROPRIETARI e non ricostruibili algoritmicamente → simulazione con dati casuali<br>
+• Questo sistema implementa ESCLUSIVAMENTE la Previsionistica Razionale ufficiale (Parti 1-8 documentazione)<br>
+• Nessun elemento non documentato (Golden Zone, Ms, regime energetico, convergenze) è incluso<br>
+• Nessun metodo assicura vincita al 100% - il gioco del lotto comporta rischio di perdita
+</div>
+
+<!-- SEZIONE ANOMALIE -->
+<div class="breve-periodo">
+<h3>🎯 STATO SISTEMA ESTR. - ANOMALIE (Parte 4 P.R. UFFICIALE)</h3>
+<p style="margin-bottom: 15px;">
+<strong>Percentuale anomalie:</strong> 88.5% (23/26 confronti)<br>
+<strong>Stato:</strong> CRITICO ❌<br>
+<strong>Raccomandazione:</strong> NON GIOCARE - sistema caotico (richiede normalizzazione)
+</p>
+<p style="font-size: 0.9em; margin-top: 10px;">
+ℹ️ Le anomalie (>20%) indicano estrazioni "fuori direttrice" secondo la definizione P.R. (Parte 4).<br>
+Periodi con anomalie &gt;28% richiedono cautela: ridurre esposizione o attendere normalizzazione.<br>
+<strong>Nota metodologica:</strong> Il calcolo è parte integrante della P.R. ufficiale e va eseguito indipendentemente dal contesto estrattivo (manuale/Venus).
+</p>
+</div>
+
+<!-- SEZIONE INDICAZIONI BREVE PERIODO -->
+<div class="breve-periodo">
+<h3>⚡ INDICAZIONI OPERATIVE PER IL BREVE PERIODO (1-7 COLPI EFFETTIVI)</h3>
+<ul>
+<li><strong>AMBATE PRIORITARIE (Scarico Imminente + Accavallate):</strong></li>
+<ul><li><strong>DIRETTRICI ACCAVALLATE (+35% probabilità):</strong></li><ul><li>• <strong>44</strong> (41-50) | Forza: 32.1 | Accavallamento triadico: 43-44-45 + 44-45-46</li><li>• <strong>45</strong> (41-50) | Forza: 32.1 | Accavallamento triadico: 43-44-45 + 44-45-46</li><li>• <strong>45</strong> (41-50) | Forza: 27.8 | Accavallamento triadico: 44-45-46 + 45-46-47</li></ul><li><strong>ISOTOPI AVANZATI (stessa posizione + evoluzione):</strong></li><ul><li>• 40 (31-40, pos. 4, EVOLUTIVO CHIUSO ✅)</li><li>• 73 (71-80, pos. 1, EVOLUTIVO CHIUSO ✅)</li><li>• 46 (41-50, pos. 3, INVOLUTIVO CHIUSO ⚠️)</li></ul><li><strong>FASE SFALDAMENTO (≥2 precursori):</strong></li><ul><li>• 03 | Precursori: 3 | Esito atteso: 6-7</li><li>• 15 | Precursori: 3 | Esito atteso: 6-7</li><li>• 18 | Precursori: 2 | Esito atteso: 6-7</li></ul>
+</ul>
+<li><strong>DA EVITARE ASSOLUTAMENTE:</strong></li>
+<ul><li>• 71 (5 presenze nelle ultime 18 estrazioni - SOGLIA SATURAZIONE RAGGIUNTA)</li><li>• 27 (4 presenze nelle ultime 18 estrazioni - SOGLIA SATURAZIONE RAGGIUNTA)</li><li>• 63 (4 presenze nelle ultime 18 estrazioni - SOGLIA SATURAZIONE RAGGIUNTA)</li>
+</ul>
+<li><strong>C.A.F. AD ALTA PRIORITÀ:</strong></li>
+<ul><li>• 31-40 (2026/02/13→2026/02/14) | EVOLUTIVO IDEALE ✅</li><li>• 61-70 (2026/02/14→2026/02/17) | CHIUSO NEUTRO ⚠️</li>
+</ul>
+</ul>
+<p style="margin-top: 15px; font-weight: bold;">
+ℹ️ <strong>Nota sui colpi:</strong> I "colpi effettivi" contano solo le estrazioni in cui la decina del numero è apparsa (non i giorni calendariali).
+Verificare sempre la saturazione prima di giocare.
+</p>
+</div>
+
+<h2>ANALISI DECINE NATURALI (Ultime 18 estrazioni)</h2>
+<table>
+<tr>
+<th>Decina</th>
+<th>Tot</th>
+<th>S1</th>
+<th>S2</th>
+<th>Δ</th>
+<th>Scost.</th>
+<th>Stato</th>
+<th>Tendenza</th>
+<th>Fase</th>
+<th>Stabilità</th>
+<th>Colpi Eff.</th>
+<th>Saturazione</th>
+</tr>
+<tr class='sottomedia'>
+<td>01-10</td>
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>+2</td>
+<td>-4</td>
+<td><strong>SOTTOMEDIA</strong></td>
+<td class="attiva">ATTIVA</td>
+<td class="accumulo">ACCUMULO AVANZATO 🔋</td>
+<td>VOLATILE ⚠️ (σ = 2.49)</td>
+<td>6</td>
+<td>—</td>
+</tr>
+<tr class='sottomedia'>
+<td>41-50</td>
+<td>9</td>
+<td>4</td>
+<td>5</td>
+<td>+1</td>
+<td>-1</td>
+<td><strong>SOTTOMEDIA</strong></td>
+<td class="attiva">ATTIVA</td>
+<td class="accumulo">ACCUMULO AVANZATO 🔋</td>
+<td>STABILE ✅ (σ = 1.25)</td>
+<td>7</td>
+<td>—</td>
+</tr>
+<tr class='sottomedia'>
+<td>61-70</td>
+<td>7</td>
+<td>2</td>
+<td>5</td>
+<td>+3</td>
+<td>-3</td>
+<td><strong>SOTTOMEDIA</strong></td>
+<td class="attiva">ATTIVA</td>
+<td class="accumulo">ACCUMULO AVANZATO 🔋</td>
+<td>VOLATILE ⚠️ (σ = 1.70)</td>
+<td>6</td>
+<td>—</td>
+</tr>
+<tr class='sottomedia'>
+<td>11-20</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>-2</td>
+<td>-2</td>
+<td><strong>SOTTOMEDIA</strong></td>
+<td class="passiva">PASSIVA</td>
+<td class="accumulo">NON ATTIVA ⏸️</td>
+<td>VOLATILE ⚠️ (σ = 2.05)</td>
+<td>7</td>
+<td>—</td>
+</tr>
+<tr class='sovramedia'>
+<td>21-30</td>
+<td>16</td>
+<td>9</td>
+<td>7</td>
+<td>-2</td>
+<td>+6</td>
+<td><strong>SOVRAMEDIA</strong></td>
+<td class="passiva">PASSIVA</td>
+<td class="accumulo">NON ATTIVA ⏸️</td>
+<td>VOLATILE ⚠️ (σ = 1.63)</td>
+<td>12</td>
+<td>SATURA</td>
+</tr>
+<tr class='media'>
+<td>31-40</td>
+<td>10</td>
+<td>3</td>
+<td>7</td>
+<td>+4</td>
+<td>+0</td>
+<td><strong>MEDIA</strong></td>
+<td class="attiva">ATTIVA</td>
+<td class="accumulo">NON ATTIVA ⏸️</td>
+<td>VOLATILE ⚠️ (σ = 1.63)</td>
+<td>8</td>
+<td>—</td>
+</tr>
+<tr class='sovramedia'>
+<td>51-60</td>
+<td>11</td>
+<td>8</td>
+<td>3</td>
+<td>-5</td>
+<td>+1</td>
+<td><strong>SOVRAMEDIA</strong></td>
+<td class="passiva">PASSIVA</td>
+<td class="accumulo">NON ATTIVA ⏸️</td>
+<td>VOLATILE ⚠️ (σ = 2.62)</td>
+<td>9</td>
+<td>—</td>
+</tr>
+<tr class='sovramedia'>
+<td>71-80</td>
+<td>15</td>
+<td>6</td>
+<td>9</td>
+<td>+3</td>
+<td>+5</td>
+<td><strong>SOVRAMEDIA</strong></td>
+<td class="attiva">ATTIVA</td>
+<td class="accumulo">NON ATTIVA ⏸️</td>
+<td>VOLATILE ⚠️ (σ = 2.05)</td>
+<td>13</td>
+<td>—</td>
+</tr>
+<tr class='sottomedia'>
+<td>81-90</td>
+<td>8</td>
+<td>6</td>
+<td>2</td>
+<td>-4</td>
+<td>-2</td>
+<td><strong>SOTTOMEDIA</strong></td>
+<td class="passiva">PASSIVA</td>
+<td class="accumulo">NON ATTIVA ⏸️</td>
+<td>VOLATILE ⚠️ (σ = 1.70)</td>
+<td>7</td>
+<td>—</td>
+</tr>
+</table>
+<p class="nota">Media teorica di riferimento: 10.0 presenze per decina (18 estrazioni)<br>
+Fase: SCARICO IMMINENTE (S2≥6) → priorità massima | ACCUMULO AVANZATO (S2=4-5) | ACCUMULO INIZIALE (S2&lt;4)</p>
+
+<h2>🎯 DIRETTRICI DOMINANTI (Ultime 27 estrazioni)</h2>
+<table>
+<tr>
+<th>Decina</th>
+<th>Tipo</th>
+<th>Triade</th>
+<th>Presenze</th>
+<th>Forza</th>
+<th>Centro</th>
+<th>Validità</th>
+</tr>
+<tr>
+<td>41-50</td>
+<td><strong>TRGL</strong></td>
+<td>43-44-45</td>
+<td>2/3/3</td>
+<td><strong>11.9</strong></td>
+<td class="sottomedia">44</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td><strong>TRGL</strong></td>
+<td>44-45-46</td>
+<td>3/3/2</td>
+<td><strong>11.9</strong></td>
+<td class="sottomedia">45</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>01-10</td>
+<td><strong>TRGL</strong></td>
+<td>5-6-7</td>
+<td>2/2/2</td>
+<td><strong>9.5</strong></td>
+<td class="sottomedia">6</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td><strong>TRGL</strong></td>
+<td>47-48-49</td>
+<td>1/3/2</td>
+<td><strong>9.5</strong></td>
+<td class="sottomedia">48</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td><strong>TRGL</strong></td>
+<td>45-46-47</td>
+<td>3/2/1</td>
+<td><strong>8.7</strong></td>
+<td class="sottomedia">46</td>
+<td>OK</td>
+</tr></table>
+<h2>🔀 DIRETTRICI ACCAVALLATE (+35% probabilità)</h2>
+<table>
+<tr>
+<th>Numero</th>
+<th>Decina</th>
+<th>Triadi Coinvolte</th>
+<th>Forza Accavallamento</th>
+<th>Motivazione</th>
+</tr>
+<tr class="accavallata">
+<td><strong>44</strong></td>
+<td>41-50</td>
+<td>43-44-45 + 44-45-46</td>
+<td><strong>32.1</strong></td>
+<td>Accavallamento triadico: 43-44-45 + 44-45-46</td>
+</tr>
+<tr class="accavallata">
+<td><strong>45</strong></td>
+<td>41-50</td>
+<td>43-44-45 + 44-45-46</td>
+<td><strong>32.1</strong></td>
+<td>Accavallamento triadico: 43-44-45 + 44-45-46</td>
+</tr>
+<tr class="accavallata">
+<td><strong>45</strong></td>
+<td>41-50</td>
+<td>44-45-46 + 45-46-47</td>
+<td><strong>27.8</strong></td>
+<td>Accavallamento triadico: 44-45-46 + 45-46-47</td>
+</tr>
+<tr class="accavallata">
+<td><strong>46</strong></td>
+<td>41-50</td>
+<td>44-45-46 + 45-46-47</td>
+<td><strong>27.8</strong></td>
+<td>Accavallamento triadico: 44-45-46 + 45-46-47</td>
+</tr></table><p class='nota'><strong>Nota:</strong> Le direttrici accavallate indicano un numero confermato da doppia spinta (evolutiva + involutiva), aumentando la probabilità del 35% (Parti 4-5 documentazione).</p>
+<h2>🔄 GRUPPI ISOTOPI AVANZATI (Stessa posizione + evoluzione)</h2>
+<table>
+<tr>
+<th>Date</th>
+<th>Decina</th>
+<th>Posizione</th>
+<th>Numeri</th>
+<th>Δ</th>
+<th>Tipo Evoluzione</th>
+<th>Ambata Suggerita</th>
+<th>Forza</th>
+</tr>
+<tr class="isotopo">
+<td>2026/02/13 → 2026/02/17</td>
+<td>31-40</td>
+<td>n4</td>
+<td>38 → 39</td>
+<td>+1</td>
+<td>EVOLUTIVO CHIUSO ✅</td>
+<td><strong>40</strong></td>
+<td>⭐⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/20 → 2026/02/21</td>
+<td>71-80</td>
+<td>n1</td>
+<td>71 → 72</td>
+<td>+1</td>
+<td>EVOLUTIVO CHIUSO ✅</td>
+<td><strong>73</strong></td>
+<td>⭐⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/06 → 2026/02/17</td>
+<td>41-50</td>
+<td>n3</td>
+<td>48 → 47</td>
+<td>-1</td>
+<td>INVOLUTIVO CHIUSO ⚠️</td>
+<td><strong>46</strong></td>
+<td>⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/20 → 2026/02/24</td>
+<td>51-60</td>
+<td>n5</td>
+<td>58 → 57</td>
+<td>-1</td>
+<td>INVOLUTIVO CHIUSO ⚠️</td>
+<td><strong>56</strong></td>
+<td>⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/03 → 2026/02/05</td>
+<td>71-80</td>
+<td>n4</td>
+<td>71 → 74</td>
+<td>+3</td>
+<td>EVOLUTIVO APERTO ℹ️</td>
+<td><strong>75</strong></td>
+<td>⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/03 → 2026/02/06</td>
+<td>31-40</td>
+<td>n5</td>
+<td>38 → 35</td>
+<td>-3</td>
+<td>INVOLUTIVO APERTO ℹ️</td>
+<td><strong>34</strong></td>
+<td>⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/06 → 2026/02/07</td>
+<td>01-10</td>
+<td>n1</td>
+<td>09 → 05</td>
+<td>-4</td>
+<td>INVOLUTIVO APERTO ℹ️</td>
+<td><strong>04</strong></td>
+<td>⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/03 → 2026/02/07</td>
+<td>21-30</td>
+<td>n2</td>
+<td>30 → 25</td>
+<td>-5</td>
+<td>INVOLUTIVO APERTO ℹ️</td>
+<td><strong>24</strong></td>
+<td>⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/05 → 2026/02/07</td>
+<td>11-20</td>
+<td>n3</td>
+<td>12 → 19</td>
+<td>+7</td>
+<td>EVOLUTIVO APERTO ℹ️</td>
+<td><strong>20</strong></td>
+<td>⭐</td>
+</tr>
+<tr class="isotopo">
+<td>2026/02/05 → 2026/02/10</td>
+<td>71-80</td>
+<td>n4</td>
+<td>74 → 79</td>
+<td>+5</td>
+<td>EVOLUTIVO APERTO ℹ️</td>
+<td><strong>80</strong></td>
+<td>⭐</td>
+</tr></table><p class='nota'><strong>Nota:</strong> Gli isotopi con segmento chiuso (Δ=±1) e evolutivo (Δ=+1) hanno priorità massima (Parte 3 documentazione).</p>
+<h2>📈 CICLI AD ALTA FREQUENZA (C.A.F.)</h2>
+<table>
+<tr>
+<th>Date</th>
+<th>Decina</th>
+<th>Transizione</th>
+<th>Tipo</th>
+<th>Priorità</th>
+</tr>
+<tr>
+<td>2026/02/13 → 2026/02/14</td>
+<td>31-40</td>
+<td>1 → 2</td>
+<td class="attiva">EVOLUTIVO IDEALE ✅</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>2026/02/14 → 2026/02/17</td>
+<td>61-70</td>
+<td>2 → 1</td>
+<td class="passiva">CHIUSO NEUTRO ⚠️</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>2026/02/17 → 2026/02/19</td>
+<td>41-50</td>
+<td>1 → 2</td>
+<td class="passiva">CHIUSO NEUTRO ⚠️</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>2026/02/21 → 2026/02/24</td>
+<td>71-80</td>
+<td>1 → 2</td>
+<td class="passiva">TRANSIZIONE EVOLUTIVA ℹ️</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>2026/02/24 → 2026/02/26</td>
+<td>71-80</td>
+<td>2 → 1</td>
+<td class="passiva">TRANSIZIONE EVOLUTIVA ℹ️</td>
+<td>⭐⭐⭐</td>
+</tr></table>
+<h2>📈 ANALISI QUINDICINE NATURALI (Ultime 18 estrazioni)</h2>
+<p style="font-style: italic;">⚠️ Nota: Nel contesto Venus, ha valore informativo secondario (non primario)</p>
+<table>
+<tr>
+<th>Quindicina</th>
+<th>Presenze</th>
+<th>Stato</th>
+</tr>
+<tr>
+<td>16-30</td>
+<td>20</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr>
+<td>46-60</td>
+<td>16</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr>
+<td>61-75</td>
+<td>16</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr>
+<td>31-45</td>
+<td>14</td>
+<td><strong>SOTTOMEDIA</strong></td>
+</tr>
+<tr>
+<td>76-90</td>
+<td>14</td>
+<td><strong>SOTTOMEDIA</strong></td>
+</tr>
+<tr>
+<td>01-15</td>
+<td>10</td>
+<td><strong>SOTTOMEDIA</strong></td>
+</tr></table>
+<h2>🔢 ANALISI CADENZE NATURALI (Ultime 18 estrazioni)</h2>
+<p style="font-style: italic;">Cadenza = ultima cifra del numero (es. cadenza 1: 1,11,21,...,81). Teorico: 9 presenze per cadenza.</p>
+<table>
+<tr>
+<th>Cadenza</th>
+<th>Numeri</th>
+<th>Presenze</th>
+<th>Scostamento</th>
+<th>Stato</th>
+</tr>
+<tr class="sovrmedia">
+<td><strong>2</strong></td>
+<td>02, 12, 22, 32, 42, 52, 62, 72, 82</td>
+<td><strong>13</strong></td>
+<td>+4.0</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr class="sovrmedia">
+<td><strong>8</strong></td>
+<td>08, 18, 28, 38, 48, 58, 68, 78, 88</td>
+<td><strong>12</strong></td>
+<td>+3.0</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr class="sovrmedia">
+<td><strong>9</strong></td>
+<td>09, 19, 29, 39, 49, 59, 69, 79, 89</td>
+<td><strong>11</strong></td>
+<td>+2.0</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr class="sovrmedia">
+<td><strong>6</strong></td>
+<td>06, 16, 26, 36, 46, 56, 66, 76, 86</td>
+<td><strong>10</strong></td>
+<td>+1.0</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr class="sovrmedia">
+<td><strong>7</strong></td>
+<td>07, 17, 27, 37, 47, 57, 67, 77, 87</td>
+<td><strong>10</strong></td>
+<td>+1.0</td>
+<td><strong>SOVRAMEDIA</strong></td>
+</tr>
+<tr class="media">
+<td><strong>1</strong></td>
+<td>01, 11, 21, 31, 41, 51, 61, 71, 81</td>
+<td><strong>9</strong></td>
+<td>+0.0</td>
+<td><strong>MEDIA</strong></td>
+</tr>
+<tr class="sottomedia">
+<td><strong>4</strong></td>
+<td>04, 14, 24, 34, 44, 54, 64, 74, 84</td>
+<td><strong>7</strong></td>
+<td>-2.0</td>
+<td><strong>SOTTOMEDIA</strong></td>
+</tr>
+<tr class="sottomedia">
+<td><strong>5</strong></td>
+<td>05, 15, 25, 35, 45, 55, 65, 75, 85</td>
+<td><strong>7</strong></td>
+<td>-2.0</td>
+<td><strong>SOTTOMEDIA</strong></td>
+</tr>
+<tr class="sottomedia">
+<td><strong>0</strong></td>
+<td>10, 20, 30, 40, 50, 60, 70, 80, 90</td>
+<td><strong>6</strong></td>
+<td>-3.0</td>
+<td><strong>SOTTOMEDIA</strong></td>
+</tr>
+<tr class="sottomedia">
+<td><strong>3</strong></td>
+<td>03, 13, 23, 33, 43, 53, 63, 73, 83</td>
+<td><strong>5</strong></td>
+<td>-4.0</td>
+<td><strong>SOTTOMEDIA</strong></td>
+</tr></table>
+<p class="nota"><strong>💡 Conferma incrociata P.R.:</strong> Un numero è doppiamente confermato quando:
+<ul>
+<li>La sua decina è in SCARICO IMMINENTE (S2≥6)</li>
+<li>La sua cadenza è in SOVRAMEDIA (>9 presenze)</li>
+</ul>
+Esempio: Decina 31-40 in scarico + Cadenza 5 sovramedia → 35 prioritario.</p>
+<h2>🔒 AMBI DI CHIUSURA RILEVATI</h2>
+<table>
+<tr>
+<th>Apertura</th>
+<th>Chiusura</th>
+<th>Decina</th>
+<th>Colpi</th>
+</tr>
+<tr>
+<td>2026/02/03 (24, 26, 30)</td>
+<td>2026/02/07 (22, 25)</td>
+<td>21-30</td>
+<td>3</td>
+</tr></table>
+<h2>📉 NUMERI SCOMPENSATI (Ritardo > 18 estrazioni)</h2>
+<p>02, 03, 04, 06, 08, 10, 11, 15, 16, 17, 21, 23, 29, 32, 33, 34, 36, 37, 41, 42</p>
+<h2>🔬 BACKTESTING DIRETTRICI DOMINANTI</h2>
+<p>Tentativi: 10603 | Successi entro 6 colpi: 6853 (64.6%)</p>
+<div class="alert">
+<strong>⚠️ NUMERI SATURI - DA EVITARE ASSOLUTAMENTE</strong><br>
+Un numero è considerato saturo con ≥4 presenze nelle ultime 18 estrazioni (Parte 5 P.R. ufficiale).
+Giocare numeri saturi riduce drasticamente la probabilità di successo.
+</div>
+<table>
+<tr>
+<th>Numero</th>
+<th>Decina</th>
+<th>Presenze (18 estr.)</th>
+<th>Azione</th>
+</tr>
+<tr class="saturato">
+<td><strong>71</strong></td>
+<td>71-80</td>
+<td><strong>5</strong></td>
+<td>❌ NON GIOCARE</td>
+</tr>
+<tr class="saturato">
+<td><strong>27</strong></td>
+<td>21-30</td>
+<td><strong>4</strong></td>
+<td>❌ NON GIOCARE</td>
+</tr>
+<tr class="saturato">
+<td><strong>63</strong></td>
+<td>61-70</td>
+<td><strong>4</strong></td>
+<td>❌ NON GIOCARE</td>
+</tr></table>
+<h2>⚡ NUMERI IN FASE DI SFALDAMENTO (Top 12)</h2>
+<table>
+<tr>
+<th>#</th>
+<th>Numero</th>
+<th>Decina</th>
+<th>Precursori Sortiti</th>
+<th>Colpi Attesi</th>
+<th>Saturazione</th>
+<th>Stato</th>
+</tr>
+<tr class="sfaldamento">
+<td><strong>1</strong></td>
+<td><strong>03</strong></td>
+<td>01-10</td>
+<td>1(84%), 2(81%), 6(80%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>2</strong></td>
+<td><strong>15</strong></td>
+<td>11-20</td>
+<td>14(84%), 17(84%), 20(67%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>3</strong></td>
+<td><strong>18</strong></td>
+<td>11-20</td>
+<td>20(84%), 14(77%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>4</strong></td>
+<td><strong>21</strong></td>
+<td>21-30</td>
+<td>28(84%), 26(80%), 24(77%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>5</strong></td>
+<td><strong>25</strong></td>
+<td>21-30</td>
+<td>30(84%), 24(83%), 26(77%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>6</strong></td>
+<td><strong>28</strong></td>
+<td>21-30</td>
+<td>30(84%), 25(81%), 27(76%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>7</strong></td>
+<td><strong>33</strong></td>
+<td>31-40</td>
+<td>34(84%), 36(78%), 38(61%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>8</strong></td>
+<td><strong>37</strong></td>
+<td>31-40</td>
+<td>35(84%), 34(78%), 32(66%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>9</strong></td>
+<td><strong>48</strong></td>
+<td>41-50</td>
+<td>47(84%), 50(83%), 44(79%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>10</strong></td>
+<td><strong>55</strong></td>
+<td>51-60</td>
+<td>59(84%), 56(80%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>11</strong></td>
+<td><strong>60</strong></td>
+<td>51-60</td>
+<td>55(84%), 52(80%), 59(68%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr>
+<tr class="sfaldamento">
+<td><strong>12</strong></td>
+<td><strong>67</strong></td>
+<td>61-70</td>
+<td>69(84%), 68(67%)</td>
+<td><strong>6-7</strong></td>
+<td>0/4</td>
+<td>FASE SFALDAMENTO ✅</td>
+</tr></table><p class='nota'><strong>Nota critica:</strong> I colpi indicati sono COLPI EFFETTIVI (solo quando la decina appare), non giorni calendariali. Un numero saturo (≥4 presenze) in fase sfaldamento va EVITATO nonostante la condizione.</p>
+    <div class="breve-periodo">
+        <h3>🔚 RIEPILOGO FINALE – COSA ATTENZIONARE E COME PROCEDERE</h3>
+        <ul>
+            <li><strong>🎯 AMBATE CONSIGLIATE PER BA (1–7 colpi effettivi):</strong></li>
+            <ul>
+                <li>03 | 15 | 18 | 40 | 44 | 45</li>
+            </ul>
+            <li><strong>💡 STRATEGIA DI GIOCO:</strong></li>
+            <ul>
+                <li>1. Gioca solo se NON saturi (meno di 4 presenze nelle ultime 18 estrazioni)</li>
+                <li>2. Verifica che la decina sia in 'Scarico Imminente' o supportata da direttrice accavallata</li>
+                <li>3. Massimo 3–4 ambate per non disperdere il capitale</li>
+                <li>4. Stop al 7° colpo effettivo (non calendariale!)</li>
+            </ul>
+            <li><strong>🔒 AMBI DI CHIUSURA DA MONITORARE (BA):</strong></li>
+            <ul>
+                <li>22.25 (atteso entro 6–9 colpi)</li>
+            </ul>
+            <li><strong>❗ AVVERTENZE CRITICHE:</strong></li>
+            <ul>
+                <li>• I 'colpi' sono EFFETTIVI: contano solo quando la decina appare</li>
+                <li>• Evita assolutamente numeri con ≥4 presenze (saturi)</li>
+                <li>• Il contesto Venus riduce l’affidabilità: usa solo segnali multipli</li>
+                <li>• Gioca responsabilmente: nessun metodo garantisce vincita certa</li>
+            </ul>
+            <li><strong>✅ Procedi solo se almeno 2 tra questi elementi coincidono:</strong></li>
+            <ul>
+                <li>- Decina in Scarico Imminente</li>
+                <li>- Direttrice Accavallata</li>
+                <li>- Fase di Sfaldamento (≥2 precursori)</li>
+                <li>- Isotopo Evolutivo Chiuso</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="breve-periodo">
+        <h3>🎯 NUMERI GIOCABILI – MASTRO LETTERE + CONFERME P.R.</h3>
+        <ul>
+            <li><strong style="color:red;">46</strong> | Lettera: <strong>A</strong> | Conferme: 3 | Lettera A + direttrice accavallata + isotopo evolutivo chiuso + decina in scarico imminente</li>
+            <li><strong style="color:red;">44</strong> | Lettera: <strong>B</strong> | Conferme: 3 | Lettera B + direttrice accavallata + isotopo evolutivo chiuso + decina in scarico imminente</li>
+            <li><strong style="color:red;">62</strong> | Lettera: <strong>B</strong> | Conferme: 2 | Lettera B + isotopo evolutivo chiuso + decina in scarico imminente</li>
+        </ul>
+        <p style="font-size: 0.9em; margin-top: 10px;">
+            ℹ️ Solo numeri con <strong>lettera A/B/C</strong> e <strong>≥2 conferme P.R.</strong> (direttrice accavallata, C.A.F., sfaldamento, isotopo, decina attiva).
+        </p>
+    </div>
+    <h2>🔤 MASTRO LETTERE (Parti 10-11 P.R.)</h2>
+    <p>Il Mastro Lettere sintetizza frequenza, ritardo globale, fase di sfaldamento e saturazione.<br>
+       <strong>Lettere A/B/C (rosse)</strong>: alta probabilità di uscita imminente.<br>
+       Aggiornato al: 2026/02/27
+    </p>
+    <img src="MASTRO_BA_20260228_092420.png" alt="Mastro Lettere" style="max-width: 100%; height: auto; border: 1px solid #ccc; margin: 10px 0;">
+
+<div class="footer">
+<p><strong>© ICV-CREW | Previsionistica Razionale (Documentazione Parti 1-8)</strong></p>
+<p>Analisi eseguita il 28/02/2026 09:28:28</p>
+<p><em>Nota: Questo sistema implementa ESCLUSIVAMENTE la Previsionistica Razionale ufficiale documentata da Tutor & Ramco nelle Parti 1-8.
+Nessun elemento non documentato (Golden Zone, Ms, regime energetico, convergenze inter-ruota) è incluso.</em></p>
+<p><strong>AVVERTENZA LEGALE:</strong> Il gioco del lotto può causare dipendenza patologica. Gioca responsabilmente. Vietato ai minori di 18 anni.</p>
+</div>
+</div>
+</body>
+</html>

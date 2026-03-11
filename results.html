@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultati Lotto - Il Sito del Lotto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Il Sito del Lotto</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="play.html">Gioca</a></li>
+                    <li><a href="results.html">Risultati</a></li>
+                    <li><a href="history.html">Storico</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="results">
+        <div class="container">
+            <div class="results-container">
+                <h2>Risultati Estrazioni Lotto</h2>
+                <p>Consulta i risultati delle ultime estrazioni per tutte le ruote</p>
+                
+                <div class="last-extraction">
+                    <h3>Ultima Estrazione</h3>
+                    <p>Data: <span id="extraction-date"></span></p>
+                    
+                    <div class="extraction-numbers">
+                        <!-- I numeri dell'estrazione verranno mostrati qui -->
+                    </div>
+                </div>
+                
+                <div class="all-ruote-results">
+                    <h3>Risultati per Ruota</h3>
+                    
+                    <div class="ruota-result">
+                        <h4>Bari</h4>
+                        <div class="extraction-numbers" id="bari-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Cagliari</h4>
+                        <div class="extraction-numbers" id="cagliari-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Firenze</h4>
+                        <div class="extraction-numbers" id="firenze-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Genova</h4>
+                        <div class="extraction-numbers" id="genova-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Milano</h4>
+                        <div class="extraction-numbers" id="milano-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Napoli</h4>
+                        <div class="extraction-numbers" id="napoli-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Palermo</h4>
+                        <div class="extraction-numbers" id="palermo-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Roma</h4>
+                        <div class="extraction-numbers" id="roma-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Torino</h4>
+                        <div class="extraction-numbers" id="torino-results"></div>
+                    </div>
+                    
+                    <div class="ruota-result">
+                        <h4>Venezia</h4>
+                        <div class="extraction-numbers" id="venezia-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Il Sito del Lotto - Tutti i diritti riservati | Gioca Responsabilmente</p>
+        </div>
+    </footer>
+
+    <script src="script_results.js"></script>
+</body>
+</html>
